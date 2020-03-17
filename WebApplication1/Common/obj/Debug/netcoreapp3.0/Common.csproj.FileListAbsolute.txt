@@ -1,0 +1,5 @@
+E:\CoreTest\WebApplication1\Common\bin\Debug\netcoreapp3.0\Common.deps.json
+E:\CoreTest\WebApplication1\Common\bin\Debug\netcoreapp3.0\Common.dll
+E:\CoreTest\WebApplication1\Common\obj\Debug\netcoreapp3.0\Common.AssemblyInfoInputs.cache
+E:\CoreTest\WebApplication1\Common\obj\Debug\netcoreapp3.0\Common.AssemblyInfo.cs
+E:\CoreTest\WebApplication1\Common\obj\Debug\netcoreapp3.0\Common.csprojAssemblyReference.cache

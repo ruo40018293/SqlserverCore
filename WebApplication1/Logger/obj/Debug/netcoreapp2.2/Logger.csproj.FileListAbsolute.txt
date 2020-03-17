@@ -1,0 +1,17 @@
+E:\CoreTest\WebApplication1\Logger\bin\Debug\netcoreapp2.2\Logger.deps.json
+E:\CoreTest\WebApplication1\Logger\bin\Debug\netcoreapp2.2\Logger.dll
+E:\CoreTest\WebApplication1\Logger\bin\Debug\netcoreapp2.2\Logger.pdb
+E:\CoreTest\WebApplication1\Logger\obj\Debug\netcoreapp2.2\Logger.AssemblyInfoInputs.cache
+E:\CoreTest\WebApplication1\Logger\obj\Debug\netcoreapp2.2\Logger.AssemblyInfo.cs
+E:\CoreTest\WebApplication1\Logger\obj\Debug\netcoreapp2.2\Logger.dll
+E:\CoreTest\WebApplication1\Logger\obj\Debug\netcoreapp2.2\Logger.pdb
+E:\CoreTest\WebApplication1\Logger\obj\Debug\netcoreapp2.2\Logger.csprojAssemblyReference.cache
+D:\SqlserverCore\WebApplication1\Logger\bin\Debug\netcoreapp2.2\Logger.deps.json
+D:\SqlserverCore\WebApplication1\Logger\bin\Debug\netcoreapp2.2\Logger.dll
+D:\SqlserverCore\WebApplication1\Logger\bin\Debug\netcoreapp2.2\Logger.pdb
+D:\SqlserverCore\WebApplication1\Logger\obj\Debug\netcoreapp2.2\Logger.AssemblyInfoInputs.cache
+D:\SqlserverCore\WebApplication1\Logger\obj\Debug\netcoreapp2.2\Logger.AssemblyInfo.cs
+D:\SqlserverCore\WebApplication1\Logger\obj\Debug\netcoreapp2.2\Logger.dll
+D:\SqlserverCore\WebApplication1\Logger\obj\Debug\netcoreapp2.2\Logger.pdb
+D:\SqlserverCore\WebApplication1\Logger\obj\Debug\netcoreapp2.2\Logger.csprojAssemblyReference.cache
+D:\SqlserverCore\WebApplication1\Logger\obj\Debug\netcoreapp2.2\Logger.csproj.CoreCompileInputs.cache

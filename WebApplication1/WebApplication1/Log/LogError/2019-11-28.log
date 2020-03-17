@@ -1,0 +1,23 @@
+﻿<!--异常信息头-->
+【异常时间】：2019-11-28 15:02:12,956 [9] ;
+【异常级别】：ERROR 
+【抛出信息】：发生了未知内部错误 
+【异常类型】：NullReferenceException 
+【异常信息】：Object reference not set to an instance of an object. 
+【堆栈调用】：   at DAL.DbBase`1.GetQueryable() in E:\CoreTest\WebApplication1\DAL\DbBase.cs:line 196
+   at DAL.DbBase`1.GetList() in E:\CoreTest\WebApplication1\DAL\DbBase.cs:line 70
+   at WebApplication1.Controllers.HomeController.Index() in E:\CoreTest\WebApplication1\WebApplication1\Controllers\HomeController.cs:line 19
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() 
+ <!--异常信息尾部-->
+<!--异常信息头-->
+【异常时间】：2019-11-28 15:51:44,929 [7] ;
+【异常级别】：INFO  
+登录IP：::1 
+ <!--异常信息尾部-->

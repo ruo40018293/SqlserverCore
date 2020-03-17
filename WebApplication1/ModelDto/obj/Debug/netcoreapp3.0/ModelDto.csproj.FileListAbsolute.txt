@@ -1,0 +1,5 @@
+E:\CoreTest\WebApplication1\ModelDto\bin\Debug\netcoreapp3.0\ModelDto.deps.json
+E:\CoreTest\WebApplication1\ModelDto\bin\Debug\netcoreapp3.0\ModelDto.dll
+E:\CoreTest\WebApplication1\ModelDto\obj\Debug\netcoreapp3.0\ModelDto.csprojAssemblyReference.cache
+E:\CoreTest\WebApplication1\ModelDto\obj\Debug\netcoreapp3.0\ModelDto.AssemblyInfoInputs.cache
+E:\CoreTest\WebApplication1\ModelDto\obj\Debug\netcoreapp3.0\ModelDto.AssemblyInfo.cs

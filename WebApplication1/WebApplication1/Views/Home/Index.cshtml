@@ -1,0 +1,118 @@
+﻿<div id="Menu" v-cloak>
+    <header class="Hui-header cl">
+        <a class="Hui-logo l" title="" href="#" style="    background-size: 44px;">后台</a>
+        <a class="Hui-logo-m l" title="" href="#" style="    background-size: 44px;">后台</a>
+        <ul class="Hui-userbar">
+            <li class="dropDown dropDown_hover">
+                <a href="#" style=" width: 135px;" class="dropDown_A"><i class="iconfont icon-renwu-ren mr-5"></i>@ViewBag.Name@*<i class="iconfont icon-xia ml-5"></i>*@</a>
+                <ul class="dropDown-menu radius box-shadow menu_dropdown-arrow">
+                    @*<li><a href="/Login/LoginOut2">退出后台</a></li>*@
+                </ul>
+            </li>
+        </ul>
+        <a href="javascript:;" class="Hui-nav-toggle Hui-iconfont" aria-hidden="false">&#xe667;</a>
+    </header>
+    <aside class="Hui-aside">
+        <div class="menu_dropdown bk_2">
+            <dl>
+                <dd>
+                    <ul>
+                        @*<template v-for="item,index in List">
+                                <li v-if="item.Childrens.length>0">
+                                    <a @@click="selectbtn(index)" data-title="item.MenuName" :id="'ddd'+index" class="select-btn"><i class="item.Icon" style="display: inline"></i><i class="iconfont" :class="item.Icon"></i>{{item.MenuName}}<i class="iconfont icon-xia"></i></a>
+                                    <ul class="zhankai">
+                                        <li v-for="model in item.Childrens"><a :_href="model.Link+'?PageId='+model.Id" class="a-btn"><i class="iconfont icon-you-"></i>{{model.MenuName}}</a></li>
+                                    </ul>
+                                </li>
+                                <li v-else>
+                                    <a :_href="item.Link+'?PageId='+item.Id" :data-title="item.MenuName" :class="'select-btn '+(index==0?'current':'') ">
+                                        <i class="item.Icon" style="display: inline"></i><i class="iconfont" :class="item.Icon"></i>{{item.MenuName}}
+                                    </a>
+                                </li>
+                            </template>*@
+                        <li>
+                            <a _href="/Home/Privacy" data-title="首页" class="select-btn current">
+                                <i class="el-icon-s-data" style="display: inline"></i>首页
+                            </a>
+                        </li>
+                        <li>
+                            <a _href="/System/UserIndex" data-title="数据源设置" class="select-btn">
+                                <i class="el-icon-user" style="display: inline"></i>用户设置
+                            </a>
+                        </li>
+                        <li><a _href="/System/SystemIndex" data-title="数据仓库" class="select-btn"><i class="el-icon-s-platform" style="display: inline"></i>应用管理</a></li>
+                        <li><a _href="/System/UserLoginIndex" data-title="用户活动" class="select-btn"><i class="el-icon-s-grid" style="display: inline"></i>用户活动</a></li>
+                        <li><a _href="/System/MessageIndex" data-title="API设置" class="select-btn"><i class="el-icon-message-solid" style="display: inline"></i>系统操作信息</a></li>
+                        <li><a _href="/System/ErrorLoginIndex" data-title="登录异常信息" class="select-btn"><i class="el-icon-warning" style="display: inline"></i>登录异常信息</a></li>
+                        <li>
+                            <a data-title="系统设置" class="select-btn"><i class="el-icon-s-tools" style="display: inline"></i>系统设置<i class="iconfont icon-xia"></i></a>
+                            <ul class="zhankai">
+                                <li><i class="iconfont icon-you-"></i><a _href="/System/AdminIndex" class="a-btn">系统管理员</a></li>
+                                <li><i class="iconfont icon-you-"></i><a _href="/System/WebsiteIndex" class="a-btn">白名单设置</a></li>
+                                <li><i class="iconfont icon-you-"></i><a _href="/System/SystemGroupIndex" class="a-btn">应用分组</a></li>
+                                <li><i class="iconfont icon-you-"></i><a _href="/System/RoleIndex" class="a-btn">角色管理</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </aside>
+    <div class="dislpayArrow"><a class="pngfix" href="javascript:void(0);" onclick="displaynavbar(this)"></a></div>
+    <section class="Hui-article-box">
+        <div class="Hui-article" id="iframe_box">
+            <div class="show_iframe">
+                <div style="display: none" class="loading"></div>
+                <iframe scrolling="yes" frameborder="0" :src="firLink"></iframe>
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+    function resetPass(title, url, id) {
+        layer_show(title, url, 500, 300);
+    }
+
+    $('.select-btn').click(function () {
+        alert("");
+        $(this).children('.icon-zhankai').toggleClass('xuanzhuan');
+        $(this).next('.zhankai').slideToggle();
+    });
+
+
+
+
+    var app = new Vue({
+        el: '#Menu',
+        data: {
+            List: [],
+            firLink: '/Home/Privacy',
+            flag:false
+        },
+        methods: {
+            getList: function () {
+                var _this = this;
+                this.mainLoad = true;
+                $.post("/api/menu/GetMenu?Code=sso&LoginName=@ViewBag.Name", {}, function (data) {
+
+                    //var obj = JSON.parse(data);
+                    if (data.Code == "1") {
+                        var dataList = JSON.parse(data.Result);
+                        _this.List = dataList;
+                        _this.firLink = dataList?dataList[0].Link + "?PageId=" + dataList[0].Id:"/Home/ErrorPage?Msg=你没有菜单权限，请联系管理员分配";
+                        console.log(_this.List);
+                    } else {
+                        showError(data.Result);
+                    }
+                });
+            },
+            selectbtn: function (index) {
+                $("#ddd" + index).children('.icon-zhankai').toggleClass('xuanzhuan');
+                $("#ddd" + index).next('.zhankai').slideToggle();
+            }
+        },
+        created: function () {
+            //this.getList();
+        }
+    });
+</script>

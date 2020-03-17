@@ -1,0 +1,13 @@
+﻿<!--异常信息头-->
+【异常时间】：2020-03-03 14:35:40,856 [6] ;
+【异常级别】：ERROR 
+【抛出信息】：发生了未知内部错误 
+【异常类型】：InvalidOperationException 
+【异常信息】：Unable to resolve service for type 'BLL.T_UserServer' while attempting to activate 'WebApplication1.Controllers.HomeController'. 
+【堆栈调用】：   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() 
+ <!--异常信息尾部-->

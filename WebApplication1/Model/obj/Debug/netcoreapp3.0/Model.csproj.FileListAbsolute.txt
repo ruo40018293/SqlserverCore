@@ -1,0 +1,10 @@
+E:\CoreTest\WebApplication1\Model\bin\Debug\netcoreapp3.0\Model.deps.json
+E:\CoreTest\WebApplication1\Model\bin\Debug\netcoreapp3.0\Model.dll
+E:\CoreTest\WebApplication1\Model\obj\Debug\netcoreapp3.0\Model.csprojAssemblyReference.cache
+E:\CoreTest\WebApplication1\Model\obj\Debug\netcoreapp3.0\Model.AssemblyInfoInputs.cache
+E:\CoreTest\WebApplication1\Model\obj\Debug\netcoreapp3.0\Model.AssemblyInfo.cs
+E:\CoreTest\WebApplication1\Model\bin\Debug\netcoreapp3.0\Model.runtimeconfig.json
+E:\CoreTest\WebApplication1\Model\bin\Debug\netcoreapp3.0\Model.runtimeconfig.dev.json
+E:\CoreTest\WebApplication1\Model\bin\Debug\netcoreapp3.0\Model.pdb
+E:\CoreTest\WebApplication1\Model\obj\Debug\netcoreapp3.0\Model.dll
+E:\CoreTest\WebApplication1\Model\obj\Debug\netcoreapp3.0\Model.pdb

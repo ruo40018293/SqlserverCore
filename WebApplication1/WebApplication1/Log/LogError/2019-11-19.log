@@ -1,0 +1,157 @@
+﻿<!--异常信息头-->
+【异常时间】：2019-11-19 09:46:43,024 [9] ;
+【异常级别】：ERROR 
+【抛出信息】：发生了未知内部错误 
+【异常类型】：InvalidOperationException 
+【异常信息】：Cannot create a DbSet for 't_user' because this type is not included in the model for the context. 
+【堆栈调用】：   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DAL.DbBase`1.GetEntities() in E:\CoreTest\WebApplication1\DAL\DbBase.cs:line 78
+   at DAL.BaseServices`1.GetList() in E:\CoreTest\WebApplication1\DAL\BaseServices.cs:line 105
+   at WebApplication1.Controllers.HomeController.Index() in E:\CoreTest\WebApplication1\WebApplication1\Controllers\HomeController.cs:line 18
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() 
+ <!--异常信息尾部-->
+<!--异常信息头-->
+【异常时间】：2019-11-19 09:50:50,345 [7] ;
+【异常级别】：ERROR 
+【抛出信息】：发生了未知内部错误 
+【异常类型】：InvalidOperationException 
+【异常信息】：Cannot create a DbSet for 't_user' because this type is not included in the model for the context. 
+【堆栈调用】：   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Collections.Generic.IEnumerable<TEntity>.GetEnumerator()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DAL.DbBase`1.GetEntities() in E:\CoreTest\WebApplication1\DAL\DbBase.cs:line 78
+   at DAL.BaseServices`1.GetList() in E:\CoreTest\WebApplication1\DAL\BaseServices.cs:line 105
+   at WebApplication1.Controllers.HomeController.Index() in E:\CoreTest\WebApplication1\WebApplication1\Controllers\HomeController.cs:line 18
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() 
+ <!--异常信息尾部-->
+<!--异常信息头-->
+【异常时间】：2019-11-19 16:22:43,027 [9] ;
+【异常级别】：ERROR 
+【抛出信息】：发生了未知内部错误 
+【异常类型】：InvalidOperationException 
+【异常信息】：Unable to resolve service for type 'BLL.T_UserServer' while attempting to activate 'WebApplication1.Controllers.HomeController'. 
+【堆栈调用】：   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() 
+ <!--异常信息尾部-->
+<!--异常信息头-->
+【异常时间】：2019-11-19 16:33:49,247 [7] ;
+【异常级别】：ERROR 
+【抛出信息】：发生了未知内部错误 
+【异常类型】：InvalidOperationException 
+【异常信息】：Cannot create a DbQuery for 't_user' because it is not a query type. Use the DbContext.Set method to create a DbSet instead. 
+【堆栈调用】：   at Microsoft.EntityFrameworkCore.Internal.InternalDbQuery`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbQuery`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbQuery`1.System.Collections.Generic.IEnumerable<TQuery>.GetEnumerator()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DAL.DbBase`1.GetList(Expression`1 condition) in E:\CoreTest\WebApplication1\DAL\DbBase.cs:line 61
+   at WebApplication1.Controllers.HomeController.Index() in E:\CoreTest\WebApplication1\WebApplication1\Controllers\HomeController.cs:line 24
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() 
+ <!--异常信息尾部-->
+<!--异常信息头-->
+【异常时间】：2019-11-19 16:34:32,278 [8] ;
+【异常级别】：ERROR 
+【抛出信息】：发生了未知内部错误 
+【异常类型】：InvalidOperationException 
+【异常信息】：Cannot create a DbQuery for 't_user' because it is not a query type. Use the DbContext.Set method to create a DbSet instead. 
+【堆栈调用】：   at Microsoft.EntityFrameworkCore.Internal.InternalDbQuery`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbQuery`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbQuery`1.System.Collections.Generic.IEnumerable<TQuery>.GetEnumerator()
+   at System.Collections.Generic.List`1.AddEnumerable(IEnumerable`1 enumerable)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at DAL.DbBase`1.GetList() in E:\CoreTest\WebApplication1\DAL\DbBase.cs:line 69
+   at WebApplication1.Controllers.HomeController.Index() in E:\CoreTest\WebApplication1\WebApplication1\Controllers\HomeController.cs:line 24
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() 
+ <!--异常信息尾部-->
+<!--异常信息头-->
+【异常时间】：2019-11-19 17:03:19,674 [9] ;
+【异常级别】：ERROR 
+【抛出信息】：发生了未知内部错误 
+【异常类型】：NullReferenceException 
+【异常信息】：Object reference not set to an instance of an object. 
+【堆栈调用】：   at DAL.DbBase`1.GetQueryable() in E:\CoreTest\WebApplication1\DAL\DbBase.cs:line 195
+   at DAL.DbBase`1.GetList() in E:\CoreTest\WebApplication1\DAL\DbBase.cs:line 69
+   at WebApplication1.Controllers.HomeController.Index() in E:\CoreTest\WebApplication1\WebApplication1\Controllers\HomeController.cs:line 24
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() 
+ <!--异常信息尾部-->
+<!--异常信息头-->
+【异常时间】：2019-11-19 17:05:38,553 [9] ;
+【异常级别】：ERROR 
+【抛出信息】：发生了未知内部错误 
+【异常类型】：NullReferenceException 
+【异常信息】：Object reference not set to an instance of an object. 
+【堆栈调用】：   at DAL.DbBase`1.GetQueryable() in E:\CoreTest\WebApplication1\DAL\DbBase.cs:line 195
+   at DAL.DbBase`1.GetList() in E:\CoreTest\WebApplication1\DAL\DbBase.cs:line 69
+   at WebApplication1.Controllers.HomeController.Index() in E:\CoreTest\WebApplication1\WebApplication1\Controllers\HomeController.cs:line 24
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() 
+ <!--异常信息尾部-->
+<!--异常信息头-->
+【异常时间】：2019-11-19 17:40:39,548 [9] ;
+【异常级别】：ERROR 
+【抛出信息】：发生了未知内部错误 
+【异常类型】：NullReferenceException 
+【异常信息】：Object reference not set to an instance of an object. 
+【堆栈调用】：   at DAL.DbBase`1.GetQueryable() in E:\CoreTest\WebApplication1\DAL\DbBase.cs:line 198
+   at DAL.DbBase`1.GetList() in E:\CoreTest\WebApplication1\DAL\DbBase.cs:line 72
+   at WebApplication1.Controllers.HomeController.Index() in E:\CoreTest\WebApplication1\WebApplication1\Controllers\HomeController.cs:line 24
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextExceptionFilterAsync() 
+ <!--异常信息尾部-->
